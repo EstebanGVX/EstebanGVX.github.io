@@ -1,9 +1,11 @@
 let objIconList = document.getElementsByClassName("icon-list")[0];
+let objIconList1 = document.getElementsByClassName("icon-list")[1];
 let objClosex = document.getElementsByClassName("close-x")[0];
 let objMain = document.getElementsByTagName("main")[0];
 
 //window.addEventListener("click",closeMenuLateral,false);
 objIconList.onclick = showMenuLateral;
+objIconList1.onclick = showMenuLateral;
 objMain.onclick = closeMenuLateral;
 window.addEventListener("resize",resizeWin,false);
 //objClosex.onclick = closeMenuLateral;

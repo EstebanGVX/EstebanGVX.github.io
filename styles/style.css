@@ -40,6 +40,7 @@ a {
 
 img {
     display: block;
+    object-fit: cover;
     max-width: 100%;
     height: auto;
 }
@@ -68,9 +69,7 @@ ul{
     list-style-type: none;
     font-family: 'Nunito', sans-serif;
 }
-#buscar-lenguage ul li{
-    color:#ffffff;
-}
+
 
 .style-ico{
     display:inline-block;
@@ -111,9 +110,14 @@ ul{
     height:20px;
     margin-right:10px;
 }
-#buscar-lenguage ul li{
+.buscar-lenguage ul li{
     display:inline;
     text-align:center;
+    color:#ffffff;
+}
+
+.hidden-desktop{
+display:none;
 }
 #car-user-favor ul li{
     display:inline-block;
@@ -269,7 +273,7 @@ right:17vw;
     }
     #arrow-left img{
     top:50%;
-    left:0;
+    left:5%;
     }
     #arrow-left{
     width:100%
@@ -279,7 +283,7 @@ right:17vw;
     }
     #arrow-right img{
     top:50%;
-    left:97%;
+    left:92%;
     }
     #slider-ofert{
     /*width:20%;*/
@@ -419,7 +423,7 @@ right:17vw;
 background-image:url("https://i.postimg.cc/524yQ2g0/img-icecream.jpg");
 background-attachment: fixed;
 background-position:center;
-background-size:160% 160%;
+background-size:cover;
 /*height:100vh;*/
 width:100%;
 padding-top:15vh;
@@ -628,6 +632,7 @@ background-color:#ffdea6;
 .footer-nav ul li a {
     display: inline-block;
     padding: 10px;
+    font-size: 1.5rem;
     transition: color 1s;
 }
 .footer-nav ul li a:hover {
@@ -751,6 +756,28 @@ background-color:#ffdea6;
 }
 
 @media(max-width:756px){
+
+
+    #component1{
+     display:block;
+    }
+    #logo img{
+     margin-left:auto;
+     margin-right:auto;
+    }
+    .hidden-movil{
+      display:none;
+    }
+    .hidden-desktop{
+      display:inline-block;
+    }
+    #car-user-favor{
+      display:flex;
+      justify-content:space-between;
+    }
+    #car-user-favor ul{
+      display:inline-block;
+    }
     #header-component2{
         display:none;
         position:absolute;
@@ -808,6 +835,11 @@ background-color:#ffdea6;
     .imgSubMenu{
     max-width:100%;
     }
+    
+        .footer-nav ul li a {
+        font-size: 2rem;
+    }
+
 }
 
 
@@ -837,7 +869,6 @@ background-color:#ffdea6;
 
     .footer-nav ul li a {
         padding: 0 25px;
-        font-size: 1.5rem;
         text-transform: uppercase;
     }
 
